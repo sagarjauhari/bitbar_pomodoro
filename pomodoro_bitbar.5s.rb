@@ -73,8 +73,8 @@ class BitbarPomodoro
   
   def print_started
     start_time = DateTime.parse(@start_time).to_time
-    duration = ((Time.now - start_time)/60).floor
-    puts "🍅  #{duration}m"
+    percent_complete = (((Time.now - start_time)/60)*(100/POMODORO_TIME)).floor
+    puts "🍅  #{percent_complete}%"
     puts "---"
     puts "Pomodoro"
     puts "---"
@@ -94,7 +94,7 @@ class BitbarPomodoro
   end
 end
 
-# Parse arguments: --start, --stop
+# Parse arguments: --start, --stop, --check
 options = OpenStruct.new
 OptionParser.new do |parser|
   parser.on('-s', '--start', 'Start pomodoro') do
