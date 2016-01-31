@@ -3,6 +3,7 @@ Unofficial [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) plugin
 for the fantastic tool [Bitbar](https://github.com/matryer/bitbar)
 
 ![](/images/pic1.png)
+
 ![](/images/pic3.png)
 
 ### Installation
