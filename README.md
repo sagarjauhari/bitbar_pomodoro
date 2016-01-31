@@ -1,11 +1,13 @@
 # Bitbar Pomodoro
-Unofficial pomodoro plugin for [Bitbar](https://github.com/matryer/bitbar)
+Unofficial [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) plugin
+for the fantastic tool [Bitbar](https://github.com/matryer/bitbar)
 
 ![](/images/pic1.png)
 ![](/images/pic2.png)
 
 ### Installation
-Read the Bitbar [plugins page](https://github.com/matryer/bitbar-plugins) for instructions on how to install this plugin
+Read the Bitbar [plugins page](https://github.com/matryer/bitbar-plugins) for instructions on how to install this plugin. Refreshes every 5 seconds but you
+can modify the frequency by changing the filename.
 
 ### Configuration
 The following can be configured in `pomodoro_bitbar.rb`:

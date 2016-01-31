@@ -6,14 +6,13 @@
 # <bitbar.author.github>sagarjauhari</bitbar.author.github>
 # <bitbar.desc>A simple pomodoro plugin for Bitbar</bitbar.desc>
 # <bitbar.dependencies>ruby</bitbar.dependencies>
+
 require 'optparse'
 require 'ostruct'
 require 'date'
 
 POMODORO_TIME = 25 # minutes
 TMP_FILE_PATH = "/tmp/bitbar_pomodoro.txt"
-
-# Uses terminal-notifier by default. Modify it to use something like growl
 NOTIFIER='/usr/local/bin/terminal-notifier -title "Pomodoro" -message '
 
 class BitbarPomodoro
