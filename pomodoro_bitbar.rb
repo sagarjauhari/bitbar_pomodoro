@@ -10,10 +10,6 @@ require 'optparse'
 require 'ostruct'
 require 'date'
 
-# Set the bitbar plugin folder here or as an environment variable
-BITBAR_PLUGINS_FOLDER = ENV["BITBAR_PLUGINS_FOLDER"] ||
-                        "~/bitbar-plugin-folder"
-
 POMODORO_TIME = 25 # minutes
 TMP_FILE_PATH = "/tmp/bitbar_pomodoro.txt"
 
