@@ -13,7 +13,6 @@ require 'date'
 
 POMODORO_TIME = 25 # minutes
 TMP_FILE_PATH = "/tmp/bitbar_pomodoro.txt"
-NOTIFIER='/usr/local/bin/terminal-notifier -title "Pomodoro" -message '
 
 class BitbarPomodoro
   def initialize(options)
@@ -62,7 +61,9 @@ class BitbarPomodoro
 
   def stop
     @file.truncate(0)
-    `#{NOTIFIER} Complete!`
+    notification_cmd = '\'display notification "Complete!" with title ' +
+      '"Pomodoro" sound name "Tink"\''
+    `osascript -e #{notification_cmd}`
     print_ended
   end
 

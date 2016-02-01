@@ -6,12 +6,13 @@ for the fantastic tool [Bitbar](https://github.com/matryer/bitbar)
 ![](/images/pic2.png)
 
 ### Installation
-Read the Bitbar [plugins page](https://github.com/matryer/bitbar-plugins) for instructions on how to install this plugin. Refreshes every 5 seconds but you
+Read the Bitbar [plugins page](https://github.com/matryer/bitbar-plugins) for
+instructions on how to install this plugin. Refreshes every 5 seconds but you
 can modify the frequency by changing the filename.
 
 ### Configuration
 The following can be configured in `pomodoro_bitbar.rb`:
 - **POMODORO_TIME**: 25 minutes by default
-- **TMP_FILE_PATH**: Path of temporary file used to keep track of Pomodoros
-- **NOTIFIER**: Notifier command invoked to show notification. Uses `terminal-notifier` by default. Modify it to use something like growl
-
+- **TMP_FILE_PATH**: Path of temporary file used to keep track of Pomodoros. You
+    shouldn't need to change this unless there are some permissions issues to
+    read/write files in the `tmp` directory
