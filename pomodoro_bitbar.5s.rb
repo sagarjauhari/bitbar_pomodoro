@@ -114,11 +114,11 @@ class BitbarPomodoro
       poms_completed_today = last_poms.select do |time_str|
         DateTime.parse(time_str).to_date == DateTime.now.to_date
       end.count
+      remaining_poms = DAILY_GOAL - poms_completed_today
 
       puts "---"
-
       puts "⚫"*poms_completed_today +
-           "⚪"*(DAILY_GOAL - poms_completed_today)
+           "⚪"*(remaining_poms >= 0 ? remaining_poms : 0)
     end
   end
 end
