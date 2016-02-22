@@ -2,9 +2,13 @@
 Unofficial [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) plugin
 for the fantastic tool [Bitbar](https://github.com/matryer/bitbar)
 
-![](/images/pic1.png)
+![](/images/pic1.png) ![](/images/pic3.png)
 
-![](/images/pic3.png)
+## Set daily goal
+Latest version allows setting a daily goal for the number of Pomodoros to complete and shows the progress in the dropdown
+
+![](/images/pic4_progress1.png) ![](/images/pic5_progress2.png)
+
 
 ### Installation
 Read the Bitbar [plugins page](https://github.com/matryer/bitbar-plugins) for
